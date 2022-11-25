@@ -1,6 +1,5 @@
 local opt = vim.opt --vim conciseness
 
-
 -- line nummber
 opt.number = true
 opt.relativenumber = true
@@ -24,9 +23,10 @@ opt.background = "dark"
 opt.signcolumn = "yes"
 
 --color scheme
-vim.g.ayucolor = 'mirage'
-local status, _ = pcall(vim.cmd ,"colorscheme ayu")
+vim.g.ayucolor = "mirage"
+local status, _ = pcall(vim.cmd, "colorscheme ayu")
 
+vim.cmd([[hi Normal guibg=none]])
 
 -- backspace
 opt.backspace = "indent,eol,start"
@@ -39,8 +39,3 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
-
-
-
-
-
