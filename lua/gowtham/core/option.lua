@@ -23,10 +23,10 @@ opt.background = "dark"
 opt.signcolumn = "yes"
 
 --color scheme
-vim.g.ayucolor = "mirage"
+-- vim.g.ayucolor = "mirage"
 local status, _ = pcall(vim.cmd, "colorscheme ayu")
-
 vim.cmd([[hi Normal guibg=none]])
+vim.cmd([[highlight LineNr guifg=grey]])
 
 -- backspace
 opt.backspace = "indent,eol,start"
